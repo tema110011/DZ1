@@ -1,7 +1,8 @@
 public class Logic {
     public static String aLotOfDamage(int damage){
+        if (damage >= 11 && damage <= 20) return " единиц ";
         int buffer = damage % 10;
-        if (buffer == 1) return " единицу ";
+        if (buffer == 1) return " единица ";
         if (buffer > 1 && buffer < 5) return " единицы ";
         return " единиц ";
     }
